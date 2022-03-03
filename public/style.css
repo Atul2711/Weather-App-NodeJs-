@@ -1,0 +1,31 @@
+html {
+    background-color: #E4E9FD;
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+  }
+  
+  .box h1 {
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .box{
+    max-width: 40%;
+    margin: 5rem auto;
+    height: auto;
+    background: #3a1679;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+  .formStyle{
+    max-width: 30%;
+   margin: 3rem auto;
+   
+    padding: 2rem;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    align-items: center;
+  }
+ 

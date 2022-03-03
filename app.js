@@ -29,7 +29,7 @@ app.post('/',function(req,res){
     // console.log("Post received");
     const City=req.body.cityName;
     const units="metric";
-    const appid="d28744af2825a923d5df32705f1a12c0";
+    const appid="Your API KEY Goes Here";
     const url="https://api.openweathermap.org/data/2.5/weather?q="+City+"&units="+units+"&appid="+appid+"&mode=json";
     https.get(url,function(response){
         console.log(response.statusCode);

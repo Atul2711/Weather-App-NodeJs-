@@ -30,7 +30,11 @@ app.post('/',function(req,res){
     // console.log("Post received");
     const City=req.body.cityName;
     const units="metric";
+<<<<<<< HEAD
     const appid=process.env.API;
+=======
+    const appid="Your API KEY Goes Here";
+>>>>>>> d4b7a64bad76a6f6f1807d48881ca320eb3631e7
     const url="https://api.openweathermap.org/data/2.5/weather?q="+City+"&units="+units+"&appid="+appid+"&mode=json";
     https.get(url,function(response){
         console.log(response.statusCode);
@@ -63,6 +67,6 @@ app.post('/',function(req,res){
 
 
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("Server is running to port 3000");
 });

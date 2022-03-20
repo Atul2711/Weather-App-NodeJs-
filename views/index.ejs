@@ -8,16 +8,31 @@
     <title>Weather Forecast</title>
 </head>
 <body>
+    <div class="main-container">
     <div class="formStyle">
     <form action="/" method="post">
         <label for="cityInput" >City Name: </label>
         <input type="text" name="cityName" id="cityInput" placeholder="Enter City Name">
-        <button type="submit">Submit</button>
+        <button type="submit">Search</button>
     </form>
     </div>
     <div class="box">
-        <h1>The temperature in <%=city%> is <%=temp%> Degrees.</h1>
-        <h1>The cloud is <%=weatherDescription%>.</h1>
+        <h1>The temperature in <%=city%> is <%=temp%> degrees.</h1>
+       
+        <h1> <%=weatherDescription%></h1>
+        <img src=<%=imgURL%>></img>
+   
+        <p class="text">Pressure: <%=pressure%> hPa</p>
+        <p class="text">Humidity: <%=humidity%> %</p>
+        <p class="text">Visibility: <%=visibility%> meter</p>
+         <h2 class="text">Wind: </h2>
+        <li class="text">Speed: <%=speed%> meter/sec</li>
+        <li class="text">Deg: <%=deg%></li>
+
 </div>
+</div>
+<footer class="footer ">
+        <p>Designed by Atul Pandit &copy; <%=year%></p>
+</footer>
 </body>
 </html>
